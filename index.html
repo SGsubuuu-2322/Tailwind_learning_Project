@@ -3,20 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Playing with tailwind</title>
   </head>
   <body>
     <div class="main w-full h-screen bg-white font-['gilroy']">
-      <div class="container mx-auto">
+      <div class="container relative h-screen mx-auto">
         <div class="navbar flex items-center justify-between w-full px-4 py-6">
           <h3 class="font-bold">neganou-design</h3>
-          <div class="links flex gap-10">
+          <div class="links hidden lg:flex gap-10">
             <a class="text-xs" href="#">Works</a>
             <a class="text-xs opacity-50" href="#">Services</a>
             <a class="text-xs opacity-50" href="#">Contact</a>
             <a class="text-xs opacity-50" href="#">Pricing</a>
           </div>
+          <i class="ri-menu-line lg:hidden"></i>
+        </div>
+
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full flex flex-col items-center"
+        >
+          <div
+            class="image w-24 h-24 rounded-full bg-red-200 flex items-center justify-center"
+          >
+            <img class="w-15" src="./zyro.png" alt="spiderman" />
+          </div>
+          <h3 class="tracking-tighter font-semibold text-xl mt-4">
+            Hiii!! I'm subham👋
+          </h3>
+          <h1
+            class="w-3/4 tracking-tighter text-4xl leading-none mt-3 font-semibold text-center"
+          >
+            Building digital products, brands, and experiences.
+          </h1>
+          <p
+            class="text-center w-3/4 mt-4 text-sm font-semibold tracking-tight"
+          >
+            Hii. I'm Oguz's Building digital products, brands, and experiences,
+            and Visual development.
+          </p>
+          <button
+            class="px-4 py-3 bg-black text-white rounded-full text-xs font-semibold tracking-tight mt-6"
+          >
+            Connect Withme
+          </button>
         </div>
       </div>
     </div>
